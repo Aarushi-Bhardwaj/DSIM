@@ -204,13 +204,14 @@ button:hover{
 }
 
 .circle{
-    width:450px;
-    height:450px;
-    background:#80c344;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+width:450px;
+height:450px;
+background:#8bcf4a;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
 }
 
 .circle img{
