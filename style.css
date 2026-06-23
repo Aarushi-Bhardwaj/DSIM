@@ -1687,3 +1687,9 @@ top:20px;
 right:25px;
 cursor:pointer;
 }
+.logo img,
+.logo-img{
+    width: 120px;
+    height: auto;
+    display: block;
+}
