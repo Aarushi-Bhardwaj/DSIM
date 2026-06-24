@@ -31,8 +31,11 @@ nav{
     box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-.logo img{
-    width:170px;
+.logo img,
+.logo-img{
+    width: 180px;
+    height: auto;
+    display: block;
 }
 
 ul{
