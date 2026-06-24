@@ -33,11 +33,10 @@ nav{
 
 .logo img,
 .logo-img{
-    width: 180px;
+    width: 220px;
     height: auto;
     display: block;
 }
-
 ul{
     display:flex;
     list-style:none;
