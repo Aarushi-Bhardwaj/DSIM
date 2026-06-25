@@ -1,26 +1,65 @@
 /* ===========================
+   RESET
+=========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7f4;
+    padding-top:60px;
+}
+
+/* ===========================
+   TOP BANNER
+=========================== */
+
+.top-banner{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#159546;
+    color:white;
+    text-align:center;
+    padding:14px;
+    font-size:17px;
+    font-weight:600;
+    z-index:9999;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+/* ===========================
    NAVBAR
 =========================== */
 
 nav{
     position:sticky;
     top:0;
-    z-index:1000;
+    z-index:999;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:18px 70px;
+    background:white;
 
-    background:#fff;
+    padding:20px 80px;
 
     box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
 .logo img,
 .logo-img{
-    width:260px;
+    width:240px;
     height:auto;
     display:block;
 }
@@ -38,286 +77,207 @@ ul li{
 
 ul li a{
     text-decoration:none;
-    color:#111;
+    color:#222;
     transition:.3s;
 }
 
 ul li a:hover{
     color:#159546;
 }
-
 /* ===========================
-   HERO
+   HERO SECTION
 =========================== */
 
 .hero{
-
-    display:grid;
-
-    grid-template-columns:1.2fr .8fr 1fr;
-
+    display:flex;
+    justify-content:space-between;
     align-items:center;
-
-    gap:20px;
-
-    padding:70px;
-
+    gap:30px;
+    padding:90px 80px;
     min-height:100vh;
-
 }
 
+/* Left */
+
 .left{
-
-    width:100%;
-
+    width:45%;
 }
 
 .left h1{
-
-    font-size:58px;
-
+    font-size:64px;
     line-height:1.1;
-
     color:#159546;
-
     font-weight:800;
-
     margin-bottom:25px;
-
 }
 
 .left p{
-
     font-size:21px;
-
-    color:#666;
-
     line-height:1.8;
-
+    color:#666;
     margin-bottom:35px;
-
 }
 
-/* Buttons */
+/* Hero Buttons */
 
 .hero-buttons{
-
-display:flex;
-
-gap:18px;
-
-flex-wrap:wrap;
-
-margin-bottom:30px;
-
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-bottom:30px;
 }
 
 .hero-buttons button{
-
-padding:18px 35px;
-
-font-size:17px;
-
-font-weight:600;
-
-border:none;
-
-border-radius:50px;
-
-cursor:pointer;
-
-transition:.4s;
-
+    padding:18px 35px;
+    border:none;
+    border-radius:50px;
+    background:#159546;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .hero-buttons button:hover{
-
-transform:translateY(-6px);
-
+    transform:translateY(-5px);
+    background:#117a39;
 }
 
 .demo-btn{
-
-background:#159546;
-
-color:white;
-
+    margin-top:10px;
 }
 
 /* Hero Stats */
 
 .hero-stats{
-
-display:flex;
-
-gap:45px;
-
-margin-top:40px;
-
+    display:flex;
+    gap:40px;
+    margin-top:35px;
 }
 
 .hero-stats h2{
-
-font-size:34px;
-
-color:#159546;
-
+    font-size:34px;
+    color:#159546;
 }
 
 .hero-stats span{
-
-color:#777;
-
-font-size:16px;
-
+    color:#777;
+    font-size:15px;
 }
 
-/* Girl */
+/* Center */
 
 .center{
+    width:25%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-margin-left:-60px;
-
+    transform:translateX(-20px);
 }
 
+/* Circle */
+
 .circle{
+    width:420px;
+    height:420px;
 
-width:360px;
+    background:#8BCF4A;
 
-height:360px;
+    border-radius:50%;
 
-background:#8bcf4a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-border-radius:50%;
+    overflow:hidden;
 
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-overflow:hidden;
-
-animation:float 4s ease-in-out infinite;
-
+    animation:float 4s ease-in-out infinite;
 }
 
 .circle img{
+    width:320px;
+    height:auto;
+}
 
-width:300px;
+/* Right */
 
-height:auto;
-
+.right{
+    width:30%;
+    display:flex;
+    justify-content:flex-end;
 }
 
 /* Form */
 
-.right{
-
-display:flex;
-
-justify-content:flex-end;
-
-}
-
 .hero-form{
+    width:360px;
 
-width:360px;
+    background:white;
 
-background:white;
+    padding:35px;
 
-padding:35px;
+    border-radius:28px;
 
-border-radius:30px;
-
-box-shadow:0 20px 50px rgba(0,0,0,.1);
-
+    box-shadow:0 18px 40px rgba(0,0,0,.10);
 }
 
 .hero-form h2{
-
-text-align:center;
-
-color:#159546;
-
-margin-bottom:25px;
-
+    text-align:center;
+    color:#159546;
+    margin-bottom:25px;
 }
 
 .hero-form input,
-
 .hero-form select{
+    width:100%;
+    padding:16px;
+    margin-bottom:18px;
 
-width:100%;
+    border:none;
 
-padding:16px;
+    background:#f5f7f4;
 
-margin-bottom:18px;
+    border-radius:15px;
 
-border:none;
-
-background:#f5f7f4;
-
-border-radius:15px;
-
-font-size:16px;
-
+    font-size:16px;
 }
 
 .hero-form button{
+    width:100%;
+    padding:16px;
 
-width:100%;
+    background:#159546;
 
-padding:18px;
+    color:white;
 
-background:#159546;
+    border:none;
 
-color:white;
+    border-radius:50px;
 
-border:none;
+    cursor:pointer;
 
-border-radius:50px;
-
-font-size:17px;
-
-cursor:pointer;
-
-transition:.4s;
-
+    transition:.3s;
 }
 
 .hero-form button:hover{
-
-background:#0f7a37;
-
+    background:#117a39;
 }
 
 @keyframes float{
 
 0%{
-
-transform:translateY(0);
-
+    transform:translateY(0);
 }
 
 50%{
-
-transform:translateY(-18px);
-
+    transform:translateY(-15px);
 }
 
 100%{
-
-transform:translateY(0);
-
+    transform:translateY(0);
 }
-
 }
 /* ===========================
    ABOUT SECTION
@@ -334,17 +294,23 @@ transform:translateY(0);
     background:white;
 }
 
+/* Left */
+
 .about-left{
     width:40%;
     display:flex;
     justify-content:center;
+    align-items:center;
 }
 
 .about-image img{
     width:100%;
-    max-width:430px;
+    max-width:420px;
+
     border-radius:30px;
-    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
     transition:.4s;
 }
 
@@ -352,265 +318,251 @@ transform:translateY(0);
     transform:scale(1.03);
 }
 
+/* Right */
+
 .about-right{
     width:60%;
-    text-align:left;
 }
 
 .about-right h4{
     color:#159546;
-    font-size:22px;
+    font-size:20px;
+    letter-spacing:2px;
     margin-bottom:15px;
+    font-weight:700;
 }
 
 .about-right h2{
-    font-size:52px;
+    font-size:54px;
     line-height:1.2;
+    color:#111;
     margin-bottom:30px;
 }
 
 .about-right p{
+    color:#666;
     font-size:20px;
     line-height:1.9;
-    color:#666;
-    margin-bottom:20px;
+    margin-bottom:22px;
 }
 
 .about-right button{
     margin-top:20px;
 }
 
+/* About Hover */
 
-/* ===========================
+.about-right button:hover{
+    transform:translateY(-5px);
+}
+/* ===================================
    WHY DIGITAL MARKETING
-=========================== */
+=================================== */
 
 .why-dm{
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
-
-    gap:80px;
-
+    gap:70px;
     padding:120px 80px;
-
     background:#f5f7f4;
-
 }
 
 .why-left{
-
-    width:40%;
-
+    width:42%;
+    display:flex;
+    justify-content:center;
 }
 
 .why-left img{
-
     width:100%;
-
+    max-width:420px;
     border-radius:30px;
-
     box-shadow:0 20px 50px rgba(0,0,0,.12);
+    transition:.4s;
+}
 
+.why-left img:hover{
+    transform:scale(1.03);
 }
 
 .why-right{
-
-    width:60%;
-
+    width:58%;
 }
 
 .why-right h4{
-
     color:#159546;
-
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:2px;
     margin-bottom:15px;
-
-    font-size:22px;
-
 }
 
 .why-right h1{
-
-    font-size:52px;
-
-    margin-bottom:30px;
-
+    font-size:54px;
+    color:#111;
     line-height:1.2;
-
+    margin-bottom:25px;
 }
 
 .why-right p{
-
     font-size:20px;
-
-    line-height:1.9;
-
     color:#666;
-
-    margin-bottom:18px;
-
+    line-height:1.9;
+    margin-bottom:20px;
 }
 
 
-/* ===========================
-   FOUNDER
-=========================== */
+/* ===================================
+   WHY CHOOSE DSIM
+=================================== */
 
-.founder{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:70px;
-
+.features{
     padding:120px 80px;
-
     background:white;
-
 }
 
-.founder-left{
-
-    width:42%;
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.founder-image img{
-
-    width:100%;
-
-    max-width:520px;
-
-    border-radius:30px;
-
-    box-shadow:0 20px 50px rgba(0,0,0,.15);
-
-    transition:.4s;
-
-}
-
-.founder-image img:hover{
-
-    transform:scale(1.03);
-
-}
-
-.founder-right{
-
-    width:58%;
-
-}
-
-.founder-right h4{
-
+.features h1{
+    text-align:center;
     color:#159546;
-
-    margin-bottom:15px;
-
-    font-size:22px;
-
+    font-size:55px;
+    margin-bottom:70px;
 }
 
-.founder-right h1{
-
-    font-size:52px;
-
-    margin-bottom:25px;
-
-}
-
-.founder-right p{
-
-    color:#666;
-
-    line-height:1.9;
-
-    font-size:20px;
-
-}
-
-.founder-achievements{
-
+.feature-container{
     display:flex;
-
-    gap:20px;
-
+    justify-content:center;
+    gap:30px;
     flex-wrap:wrap;
-
-    margin-top:40px;
-
 }
 
-.achievement-card{
+.feature-card{
 
-    background:white;
+    width:250px;
 
-    padding:25px;
+    background:#f5f7f4;
 
-    width:180px;
+    padding:35px;
+
+    border-radius:25px;
 
     text-align:center;
 
-    border-radius:20px;
+    transition:.4s;
 
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 
-    transition:.4s;
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#159546;
+
+    color:white;
 
 }
 
-.achievement-card:hover{
-
-    transform:translateY(-8px);
-
-}
-
-.achievement-card h1{
+.feature-card h2{
 
     color:#159546;
 
-    font-size:38px;
+    font-size:42px;
 
-    margin-bottom:10px;
+    margin-bottom:15px;
 
 }
-/* ===========================
+
+.feature-card:hover h2{
+
+    color:white;
+
+}
+
+.feature-card p{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+}
+/* ===================================
+   WHO SHOULD JOIN
+=================================== */
+
+.join{
+    padding:120px 80px;
+    background:white;
+}
+
+.join h1{
+    text-align:center;
+    font-size:55px;
+    color:#159546;
+    margin-bottom:70px;
+}
+
+.join-container{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.join-card{
+    width:320px;
+    background:#f5f7f4;
+    padding:30px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.join-card:hover{
+    transform:translateY(-10px);
+}
+
+.join-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+.join-card h2{
+    margin:20px 0 15px;
+    color:#159546;
+}
+
+.join-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+
+/* ===================================
    COURSE HIGHLIGHTS
-=========================== */
+=================================== */
 
 .courses{
     padding:120px 80px;
-    background:white;
+    background:#f5f7f4;
 }
 
 .courses h1{
     text-align:center;
-    font-size:55px;
     color:#159546;
-    margin-bottom:50px;
+    font-size:55px;
+    margin-bottom:40px;
 }
 
 .course-image{
-    width:320px;
     display:block;
+    width:340px;
     margin:0 auto 50px;
     border-radius:25px;
-    transition:.4s;
-}
-
-.course-image:hover{
-    transform:scale(1.03);
 }
 
 .course-container{
@@ -620,7 +572,7 @@ transform:translateY(0);
 }
 
 .course-card{
-    background:#f5f7f4;
+    background:white;
     padding:35px;
     border-radius:25px;
     text-align:center;
@@ -635,9 +587,9 @@ transform:translateY(0);
 }
 
 .course-card h2{
-    color:#159546;
     font-size:42px;
-    margin-bottom:15px;
+    color:#159546;
+    margin-bottom:10px;
 }
 
 .course-card:hover h2{
@@ -645,13 +597,13 @@ transform:translateY(0);
 }
 
 
-/* ===========================
-   SKILLS
-=========================== */
+/* ===================================
+   WHAT YOU'LL MASTER
+=================================== */
 
 .skills{
     padding:120px 80px;
-    background:#f5f7f4;
+    background:white;
 }
 
 .skills h1{
@@ -674,10 +626,11 @@ transform:translateY(0);
 }
 
 .skill-card{
-    background:white;
+    background:#f5f7f4;
     padding:28px;
     border-radius:20px;
     text-align:center;
+    font-size:18px;
     font-weight:600;
     color:#159546;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -689,15 +642,181 @@ transform:translateY(0);
     color:white;
     transform:translateY(-8px);
 }
+/* ==========================================
+   CERTIFICATIONS
+========================================== */
 
+.certifications{
+    padding:120px 80px;
+    background:#f5f7f4;
+}
 
-/* ===========================
+.certifications h1{
+    text-align:center;
+    font-size:55px;
+    color:#159546;
+    margin-bottom:70px;
+}
+
+.certificate-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.certificate-card{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.certificate-card:hover{
+    background:#159546;
+    color:white;
+    transform:translateY(-8px);
+}
+
+/* ==========================================
+   TOOLS
+========================================== */
+
+.tools{
+    padding:120px 80px;
+    background:white;
+}
+
+.tools h1{
+    text-align:center;
+    font-size:55px;
+    color:#159546;
+    margin-bottom:70px;
+}
+
+.tool-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.tool-card{
+    background:#f5f7f4;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    font-weight:600;
+    color:#159546;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.tool-card:hover{
+    background:#159546;
+    color:white;
+    transform:translateY(-8px);
+}
+
+/* ==========================================
+   CAREER
+========================================== */
+
+.career{
+    padding:120px 80px;
+    background:#0f172a;
+}
+
+.career h1{
+    text-align:center;
+    font-size:55px;
+    color:white;
+    margin-bottom:70px;
+}
+
+.career-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.career-card{
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    color:#159546;
+    font-size:22px;
+    font-weight:600;
+    transition:.4s;
+}
+
+.career-card:hover{
+    background:#159546;
+    color:white;
+    transform:translateY(-8px);
+}
+
+/* ==========================================
+   JOURNEY
+========================================== */
+
+.journey{
+    padding:120px 80px;
+    background:white;
+}
+
+.journey h1{
+    text-align:center;
+    color:#159546;
+    font-size:55px;
+    margin-bottom:70px;
+}
+
+.journey-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.journey-card{
+    background:#f5f7f4;
+    padding:35px;
+    border-radius:25px;
+    text-align:center;
+    transition:.4s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.journey-card:hover{
+    background:#159546;
+    color:white;
+    transform:translateY(-8px);
+}
+
+.number{
+    width:65px;
+    height:65px;
+    margin:auto auto 20px;
+    border-radius:50%;
+    background:#159546;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:700;
+}
+
+/* ==========================================
    PLACEMENT
-=========================== */
+========================================== */
 
 .placement{
     padding:120px 80px;
-    background:white;
+    background:#f5f7f4;
 }
 
 .placement h1{
@@ -710,19 +829,18 @@ transform:translateY(0);
 .placement-container{
     display:flex;
     justify-content:center;
-    flex-wrap:wrap;
     gap:30px;
+    flex-wrap:wrap;
 }
 
 .placement-card{
     width:240px;
-    background:#f5f7f4;
-    padding:40px 25px;
-    text-align:center;
+    background:white;
+    padding:35px;
     border-radius:25px;
-    font-size:24px;
-    font-weight:600;
+    text-align:center;
     color:#159546;
+    font-weight:600;
     transition:.4s;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
@@ -730,13 +848,313 @@ transform:translateY(0);
 .placement-card:hover{
     background:#159546;
     color:white;
+}
+
+/* ==========================================
+   TESTIMONIALS
+========================================== */
+
+.testimonials{
+    padding:120px 80px;
+    background:white;
+}
+
+.testimonials h1{
+    text-align:center;
+    color:#159546;
+    font-size:55px;
+    margin-bottom:70px;
+}
+
+.testimonial-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#f5f7f4;
+    padding:35px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.testimonial-card:hover{
     transform:translateY(-8px);
 }
 
+.testimonial-card h2{
+    color:#159546;
+    margin-bottom:15px;
+}
 
-/* ===========================
+.testimonial-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* ==========================================
+   FOUNDER
+========================================== */
+
+.founder{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+    padding:120px 80px;
+    background:white;
+}
+
+.founder-left{
+    width:42%;
+    display:flex;
+    justify-content:center;
+}
+
+.founder-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:30px;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+.founder-right{
+    width:58%;
+}
+
+.founder-right h4{
+    color:#159546;
+    margin-bottom:15px;
+    letter-spacing:2px;
+}
+
+.founder-right h1{
+    font-size:52px;
+    margin-bottom:20px;
+}
+
+.founder-right p{
+    color:#666;
+    line-height:1.9;
+}
+
+.founder-achievements{
+    display:flex;
+    gap:20px;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.achievement-card{
+    background:#f5f7f4;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    width:170px;
+    transition:.4s;
+}
+
+.achievement-card:hover{
+    transform:translateY(-8px);
+}
+
+.achievement-card h1{
+    color:#159546;
+    font-size:36px;
+}
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact{
+    padding:120px 80px;
+    background:#f5f7f4;
+}
+
+.contact h1{
+    text-align:center;
+    color:#159546;
+    font-size:55px;
+    margin-bottom:60px;
+}
+
+.contact form{
+    width:700px;
+    max-width:100%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact input,
+.contact textarea{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:18px;
+    background:white;
+    font-size:17px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contact textarea{
+    min-height:170px;
+}
+
+.contact button{
+    width:220px;
+    margin:auto;
+}
+
+/* ==========================================
+   PLACEMENT PARTNERS
+========================================== */
+
+.partners{
+    padding:120px 80px;
+    background:#0f172a;
+}
+
+.partners h1{
+    text-align:center;
+    color:white;
+    font-size:55px;
+    margin-bottom:70px;
+}
+
+.partner-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.partner-card{
+    width:200px;
+    height:140px;
+    background:white;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+}
+
+.partner-card:hover{
+    transform:translateY(-8px);
+}
+
+.partner-card img{
+    width:120px;
+}
+
+/* ==========================================
+   ALUMNI
+========================================== */
+
+.alumni-companies{
+    padding:120px 80px;
+    background:white;
+    text-align:center;
+}
+
+.alumni-companies h1{
+    font-size:55px;
+    color:#159546;
+    margin-bottom:20px;
+}
+
+.alumni-companies p{
+    color:#666;
+    margin-bottom:40px;
+}
+
+.company-grid-image img{
+    width:100%;
+    max-width:950px;
+    border-radius:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+/* ==========================================
+   SALARY
+========================================== */
+
+.salary{
+    padding:120px 80px;
+    background:#f5f7f4;
+}
+
+.salary h1{
+    text-align:center;
+    color:#159546;
+    font-size:55px;
+    margin-bottom:70px;
+}
+
+.salary-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.salary-card{
+    width:300px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.salary-card:hover{
+    transform:translateY(-8px);
+}
+
+.salary-card h2{
+    color:#159546;
+    font-size:40px;
+}
+
+/* ==========================================
+   FAQ
+========================================== */
+
+.faq{
+    padding:120px 80px;
+    background:white;
+}
+
+.faq h1{
+    text-align:center;
+    color:#159546;
+    font-size:55px;
+    margin-bottom:60px;
+}
+
+.faq-box{
+    background:#f5f7f4;
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:20px;
+}
+
+.faq-box h3{
+    margin-bottom:10px;
+}
+
+.faq-box p{
+    color:#666;
+}
+
+/* ==========================================
    CTA
-=========================== */
+========================================== */
 
 .cta{
     background:#159546;
@@ -746,13 +1164,13 @@ transform:translateY(0);
 }
 
 .cta h1{
-    font-size:55px;
-    margin-bottom:25px;
+    font-size:52px;
+    margin-bottom:20px;
 }
 
 .cta p{
-    font-size:22px;
-    margin-bottom:35px;
+    font-size:20px;
+    margin-bottom:30px;
 }
 
 .cta button{
@@ -760,54 +1178,135 @@ transform:translateY(0);
     color:#159546;
 }
 
-.cta button:hover{
-    transform:translateY(-5px);
-}
-
-
-/* ===========================
+/* ==========================================
    FOOTER
-=========================== */
+========================================== */
 
 footer{
-    background:#159546;
+    background:#0f172a;
     color:white;
     text-align:center;
-    padding:70px 30px;
+    padding:70px 20px;
 }
 
 footer h2{
-    font-size:42px;
+    font-size:40px;
     margin-bottom:20px;
-}
-
-footer p{
-    font-size:18px;
-    margin-top:12px;
 }
 
 .social-icons{
     display:flex;
     justify-content:center;
-    gap:25px;
+    gap:20px;
     margin:25px 0;
 }
 
 .social-icons a{
     color:white;
-    font-size:30px;
-    transition:.3s;
+    font-size:28px;
 }
 
-.social-icons a:hover{
-    transform:translateY(-6px);
-    color:#d9ff7f;
+footer p{
+    margin-top:12px;
 }
 
+/* ==========================================
+   FLOATING BUTTONS
+========================================== */
 
-/* ===========================
+.whatsapp-btn{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#25D366;
+    color:white;
+    padding:16px 24px;
+    border-radius:50px;
+    display:flex;
+    gap:12px;
+    align-items:center;
+    text-decoration:none;
+    z-index:999;
+}
+
+.call-btn{
+    position:fixed;
+    left:25px;
+    bottom:110px;
+    width:60px;
+    height:60px;
+    background:#159546;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:24px;
+    z-index:999;
+}
+
+/* ==========================================
+   LOADER
+========================================== */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:999999;
+}
+
+.loader-circle{
+    width:80px;
+    height:80px;
+    border:8px solid #ddd;
+    border-top:8px solid #159546;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* ==========================================
+   POPUP
+========================================== */
+
+#popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    display:none;
+    justify-content:center;
+    align-items:center;
+}
+
+.popup-box{
+    width:400px;
+    max-width:90%;
+    background:white;
+    padding:35px;
+    border-radius:25px;
+    position:relative;
+}
+
+#close-popup{
+    position:absolute;
+    right:20px;
+    top:15px;
+    cursor:pointer;
+}
+
+/* ==========================================
    MOBILE
-=========================== */
+========================================== */
 
 @media(max-width:768px){
 
@@ -815,10 +1314,9 @@ footer p{
 .about,
 .why-dm,
 .founder{
-    display:flex;
     flex-direction:column;
-    text-align:center;
     padding:60px 20px;
+    text-align:center;
 }
 
 .left,
@@ -833,27 +1331,24 @@ footer p{
     width:100%;
 }
 
-.hero{
-    gap:40px;
+nav{
+    flex-direction:column;
+    padding:20px;
 }
 
-.left h1{
-    font-size:42px;
+.logo img{
+    width:180px;
 }
 
-.hero-buttons{
-    justify-content:center;
-}
-
-.hero-stats{
-    justify-content:center;
+ul{
     flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
 }
 
 .circle{
     width:280px;
     height:280px;
-    margin:auto;
 }
 
 .circle img{
@@ -866,24 +1361,9 @@ footer p{
 }
 
 .course-container,
-.skills-container{
+.skills-container,
+.feature-container,
+.partner-container{
     grid-template-columns:1fr;
 }
-
-nav{
-    flex-direction:column;
-    gap:20px;
-    padding:20px;
-}
-
-ul{
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:20px;
-}
-
-.logo img{
-    width:180px;
-}
-
 }
