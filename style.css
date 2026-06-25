@@ -759,10 +759,10 @@ gap:10px;
 }
 
 .left{
-width:46%;
+    width:48%;
 }
 .center{
-    width:24%;
+    width:22%;
     display:flex;
     justify-content:center;
     align-items:center;
