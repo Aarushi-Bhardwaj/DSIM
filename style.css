@@ -770,14 +770,14 @@ gap:10px;
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-left:-10px;
+    margin-left:0;
 }
 
 .right{
     width:30%;
     display:flex;
     justify-content:center;
-    margin-left:-10px;
+    margin-left:20px;
 }
 
 .hero-buttons{
