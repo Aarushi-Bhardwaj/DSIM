@@ -269,12 +269,15 @@ overflow:hidden;
 .about-right h4{
     color:#159546;
     font-size:22px;
-    margin-bottom:20px;
+    margin-bottom:10px;
+    letter-spacing:2px;
+    text-transform:uppercase;
 }
 
 .about-right h2{
     font-size:70px;
     line-height:1.2;
+    margin-top:15px;
     margin-bottom:40px;
 }
 
