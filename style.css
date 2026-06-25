@@ -1777,3 +1777,13 @@ body.dark-mode select{
 body.dark-mode footer{
     border-top:1px solid #333;
 }
+/* DARK MODE */
+
+body.dark-mode{
+    background:#121212 !important;
+    color:white !important;
+}
+
+body.dark-mode *{
+    color:white !important;
+}
