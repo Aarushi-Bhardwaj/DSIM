@@ -194,3 +194,12 @@ document.getElementById("close-popup").onclick=function(){
 document.getElementById("popup").style.display="none";
 
 }
+document.addEventListener("keydown",function(e){
+
+    if(e.key==="d"){
+
+        document.body.classList.toggle("dark-mode");
+
+    }
+
+});
