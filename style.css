@@ -887,3 +887,58 @@ ul{
 }
 
 }
+/* Section Heading */
+
+.section-title{
+    margin-bottom:40px;
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:#159546;
+
+    color:#fff;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    color:#111;
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+
+}
+
+.title-line{
+
+    width:90px;
+
+    height:5px;
+
+    background:#159546;
+
+    border-radius:10px;
+
+}
