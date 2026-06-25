@@ -52,11 +52,12 @@ ul li{
 
 
 .hero{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:80px 100px;
-min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    padding:80px 70px;
+    min-height:100vh;
 }
 
 .left{
@@ -163,7 +164,7 @@ color:gray;
 
 
 .left{
-    width:50%;
+    width:42%;
 }
 
 .left h1{
