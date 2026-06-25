@@ -92,11 +92,9 @@ background:#159546;
 background:#0f172a;
 }
 
-.center{
-width:25%;
-display:flex;
-justify-content:center;
-}
+.circle{
+width:380px;
+height:380px;
 
 .circle{
 width:380px;
