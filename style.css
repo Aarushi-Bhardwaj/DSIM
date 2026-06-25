@@ -97,15 +97,15 @@ width:380px;
 height:380px;
 
 .circle{
-width:380px;
-height:380px;
-background:#80c344;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
+    width:360px;
+    height:360px;
+    background:#8bcf4a;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
 }
-
 .circle img{
 width:280px;
 border-radius:25px;
