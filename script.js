@@ -203,3 +203,4 @@ document.addEventListener("keydown",function(e){
     }
 
 });
+document.body.classList.add("dark-mode");
