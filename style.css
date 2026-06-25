@@ -93,12 +93,8 @@ background:#0f172a;
 }
 
 .circle{
-width:380px;
-height:380px;
-
-.circle{
-    width:360px;
-    height:360px;
+    width:450px;
+    height:450px;
     background:#8bcf4a;
     border-radius:50%;
     display:flex;
@@ -106,9 +102,10 @@ height:380px;
     align-items:center;
     overflow:hidden;
 }
+
 .circle img{
-    width:290px;
-    border-radius:20px;
+    width:340px;
+    border-radius:25px;
 }
 
 .right{
