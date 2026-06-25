@@ -755,16 +755,24 @@ justify-content:space-between;
 align-items:center;
 padding:100px;
 min-height:100vh;
+gap:10px;
 }
 
 .left{
-width:50%;
+width:46%;
+}
+.center{
+    width:24%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .right{
-width:40%;
-display:flex;
-justify-content:center;
+    width:30%;
+    display:flex;
+    justify-content:center;
+    margin-left:-10px;
 }
 
 .hero-buttons{
