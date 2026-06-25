@@ -283,9 +283,9 @@ overflow:hidden;
 
 .about-right p{
     max-width:850px;
-    margin:20px auto;
+    margin:25px auto;
     font-size:22px;
-    line-height:1.9;
+    line-height:1.8;
     color:gray;
 }
 .about-right button{
