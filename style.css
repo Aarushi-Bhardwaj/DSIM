@@ -538,6 +538,12 @@ transform:scale(1.03);
 .founder-right h1{
     font-size:60px;
 }
+.founder-right h2{
+    font-size:60px;
+    color:#159546;
+    font-weight:800;
+    margin-bottom:15px;
+}
 
 .founder-right p{
     color:gray;
