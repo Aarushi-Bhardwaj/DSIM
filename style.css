@@ -36,32 +36,27 @@ nav{
     width:350px;
     height:auto;
 }
-ul{
+nav ul{
     display:flex;
     list-style:none;
     gap:50px;
 }
 
-ul li{
+nav ul li{
     font-size:18px;
     font-weight:500;
     cursor:pointer;
 }
-ul li a{
-    color:#159546;
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:hover,
+nav ul li a:active{
+    color:#159546 !important;
     text-decoration:none;
     font-size:18px;
     font-weight:600;
-    transition:.3s;
-}
-
-ul li a:link,
-ul li a:visited{
-    color:#159546;
-}
-
-ul li a:hover{
-    color:#0f7a37;
 }
 
 /* Hero */
