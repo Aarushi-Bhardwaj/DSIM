@@ -1832,3 +1832,20 @@ body.dark-mode *{
 .about-right a:visited{
     text-decoration:none;
 }
+.learn-btn{
+    display:inline-block;
+    padding:18px 40px;
+    background:#159546;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.learn-btn:hover{
+    background:#0f7a37;
+    color:white;
+    text-decoration:none;
+}
