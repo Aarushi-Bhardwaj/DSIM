@@ -47,6 +47,22 @@ ul li{
     font-weight:500;
     cursor:pointer;
 }
+ul li a{
+    color:#159546;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+ul li a:link,
+ul li a:visited{
+    color:#159546;
+}
+
+ul li a:hover{
+    color:#0f7a37;
+}
 
 /* Hero */
 
