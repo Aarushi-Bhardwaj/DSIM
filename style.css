@@ -267,17 +267,24 @@ overflow:hidden;
 }
 
 .about-right h4{
-    color:#159546;
-    font-size:22px;
-    margin-bottom:10px;
-    letter-spacing:2px;
+    display:inline-block;
+    background:#159546;
+    color:white;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:1px;
     text-transform:uppercase;
+    margin-bottom:20px;
 }
 
 .about-right h2{
-    font-size:70px;
+    font-size:68px;
+    font-weight:700;
+    color:#111;
     line-height:1.2;
-    margin-top:15px;
+    margin-top:20px;
     margin-bottom:40px;
 }
 
@@ -316,8 +323,14 @@ overflow:hidden;
 }
 
 .why-right h4{
-    color:#159546;
-    margin-bottom:20px;
+    display:inline-block;
+    background:#159546;
+    color:white;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:25px;
 }
 
 .why-right h1{
