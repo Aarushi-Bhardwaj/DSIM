@@ -387,6 +387,14 @@ overflow:hidden;
     border-radius:25px;
     text-align:center;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:0.4s ease;
+    cursor:pointer;
+}
+
+.feature-card:hover{
+    transform:translateY(-15px);
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
 }
 
 .feature-card h2{
