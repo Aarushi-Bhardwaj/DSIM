@@ -1030,10 +1030,11 @@ font-weight:600;
 box-shadow:0 10px 30px rgba(0,0,0,.08);
 transition:.4s;
 }
-
 .certificate-card:hover{
-background:#159546;
-color:white;
+    background:#159546;
+    color:white;
+    transform:translateY(-12px) scale(1.03);
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
 }
 /* Tools Section */
 
@@ -1898,4 +1899,35 @@ body.dark-mode *{
 .feature-card:hover{
     transform:translateY(-15px) scale(1.05);
     box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+/* FINAL HOVER EFFECTS */
+
+.feature-card,
+.certificate-card,
+.placement-card,
+.salary-card,
+.tool-card,
+.career-card,
+.skill-card,
+.journey-card,
+.testimonial-card,
+.join-card,
+.card{
+    transition:transform .35s ease, box-shadow .35s ease !important;
+    cursor:pointer;
+}
+
+.feature-card:hover,
+.certificate-card:hover,
+.placement-card:hover,
+.salary-card:hover,
+.tool-card:hover,
+.career-card:hover,
+.skill-card:hover,
+.journey-card:hover,
+.testimonial-card:hover,
+.join-card:hover,
+.card:hover{
+    transform:translateY(-12px) scale(1.03) !important;
+    box-shadow:0 20px 45px rgba(0,0,0,.18) !important;
 }
