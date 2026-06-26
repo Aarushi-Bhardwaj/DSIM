@@ -266,26 +266,23 @@ overflow:hidden;
     text-align:center;
 }
 
-.about-right h4{
-    display:inline-block;
-    background:#159546;
-    color:white;
-    padding:10px 22px;
-    border-radius:30px;
-    font-size:20px;
-    font-weight:700;
-    letter-spacing:1px;
-    text-transform:uppercase;
+.about-right h2{
+    font-size:70px;
+    font-weight:800;
+    color:#159546;
+    line-height:1.1;
     margin-bottom:20px;
+    text-transform:uppercase;
 }
 
-.about-right h2{
-    font-size:68px;
-    font-weight:700;
+.about-right h4{
+    font-size:34px;
+    font-weight:600;
     color:#111;
-    line-height:1.2;
-    margin-top:20px;
-    margin-bottom:40px;
+    line-height:1.4;
+    margin-bottom:35px;
+    text-transform:none;
+    letter-spacing:0;
 }
 
 .about-right p{
