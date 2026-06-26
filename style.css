@@ -1849,3 +1849,22 @@ body.dark-mode *{
     color:white;
     text-decoration:none;
 }
+.learn-btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:18px 40px;
+    background:#159546;
+    color:white !important;
+    text-decoration:none;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.learn-btn:hover{
+    background:#0f7a37;
+    color:white !important;
+    text-decoration:none;
+    transform:translateY(-5px);
+}
