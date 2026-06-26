@@ -1821,3 +1821,14 @@ body.dark-mode{
 body.dark-mode *{
     color:white !important;
 }
+.about-right a{
+    text-decoration:none;
+}
+
+.about-right a:hover{
+    text-decoration:none;
+}
+
+.about-right a:visited{
+    text-decoration:none;
+}
