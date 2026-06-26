@@ -1883,3 +1883,19 @@ body.dark-mode *{
     text-decoration:none;
     transform:translateY(-5px);
 }
+.feature-card{
+    width:250px;
+    background:white;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:transform 0.4s ease, box-shadow 0.4s ease;
+    cursor:pointer;
+}
+
+.feature-card:hover{
+    transform:translateY(-15px) scale(1.05);
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
