@@ -535,16 +535,22 @@ transform:scale(1.03);
     width:50%;
 }
 
-.founder-right h1{
-    font-size:60px;
-}
 .founder-right h2{
-    font-size:60px;
+    font-size:72px;
     color:#159546;
     font-weight:800;
-    margin-bottom:15px;
+    line-height:1.1;
+    margin-bottom:20px;
+    text-transform:uppercase;
 }
 
+.founder-right h1{
+    font-size:48px;
+    color:#111;
+    font-weight:600;
+    line-height:1.2;
+    margin-bottom:25px;
+}
 .founder-right p{
     color:gray;
     line-height:1.8;
