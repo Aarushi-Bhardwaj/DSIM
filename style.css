@@ -319,19 +319,19 @@ overflow:hidden;
     width:50%;
 }
 
-.why-right h4{
-    display:inline-block;
-    background:#159546;
-    color:white;
-    padding:10px 22px;
-    border-radius:30px;
-    font-size:20px;
-    font-weight:700;
-    margin-bottom:25px;
+.why-right h1{
+    font-size:60px;
+    color:#159546;
+    font-weight:800;
+    margin-bottom:20px;
+    line-height:1.2;
 }
 
-.why-right h1{
-    font-size:55px;
+.why-right h4{
+    font-size:32px;
+    color:#111;
+    font-weight:600;
+    line-height:1.4;
     margin-bottom:30px;
 }
 
